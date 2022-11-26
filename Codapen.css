@@ -1,45 +1,44 @@
 body{
-    font-size:15px;
-    width:3000px;
-    height:3000px;
     margin:0px;
-    padding:0px;
-    position:fixed;
+    padding:0 30px;
 }
-.left{
-    min-height:1000px;
-    min-width:180px;
-    background-color:red;
-    position:fixed;
-}
-.left-1{margin:10px;}
-.left-2{margin:10px;}
-.left-3{margin:10px;}
-.left-4{margin:10px;}
-.left-5{margin:10px;}
-.left-6{margin:10px;}
-.left-7{margin:10px;}
-
 .top{
-    height:200px;
-    width:1720px;
-    right:0;
-    margin:10px;
-    background-color:blue;
-    position:fixed;
+    position:relative;
+    height:150px;
+    width:100%;
 }
-.top1{margin:10px;}
-.top-1-1{margin:10px;}
-.top-1-2{margin:10px;}
-.top-1-3{margin:10px;}
-
-.top2{margin:10px;}
-.top-2-1{margin:10px;}
-.top-2-2{margin:10px;}
-.top-2-3{margin:10px;}
-.top-2-4{margin:10px;}
-
-.top3{margin:10px;}
-.top-3-1{margin:10px;}
-.top-3-2{margin:10px;}
-.top-3-3{margin:10px;}
+.page-name{
+    position:absolute;
+    width:150px;
+    height:40px;
+    right:50px;
+    display:flex;
+    background-color:gray;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+.LOGO{
+    position:absolute;
+    top:30px;
+    left:30px;
+    font-size:40px;
+    font-weight:600;
+    
+}
+.tab:not(:last-of-type){
+    margin-right:10px;
+}
+.tabs{
+    display:flex;
+    flex-direction:row;
+    
+    overflow-x:auto;
+    overflow-y:hidden;
+}
+.center{
+    display:flex;
+    width:300px;
+    right:300px;
+    background-color:red;
+}
