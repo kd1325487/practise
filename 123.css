@@ -1,0 +1,70 @@
+body{
+    margin:0;
+    padding:0 30px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.top{
+    position:relative;
+    width:100%;
+    height:150px;
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-end;
+}
+.page-name{
+    position:absolute;
+    width:140px;
+    height:40px;
+    display:flex;
+    right:20px;
+    top:0px;
+    background-color:gray;
+    justify-content:center;
+    align-items:center;
+}
+.LOGO{
+    position:absolute;
+    top:20px;
+    font-size:30px;
+    font-weight:600;
+}
+.tabs{
+    position:absolute;
+    display:flex;
+    width:100%;
+    justify-content:flex-start;
+    align-items:flex-end;
+    overflow-y:hidden;
+    overflow-x:auto;
+}
+.tab:not(:last-of-type){
+    margin-right:10px;
+}
+.center{
+    width:100%;
+    min-height:calc(100vh - 150px);
+    background-color:red;
+}
+.up{
+    position:relative;
+    display:flex;
+    width:100%;
+    height:200px;
+    background-color:aqua;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-self:flex-start;
+}
+.Ad-Space{
+    display:flex;
+    background-color:blue;
+    right:0px;
+    border:1px solid #555;
+    width:30%;
+    height:200px;
+}
+.Rotator{
+    background-color: #555;
+    width:70%;
+    height:200px;
+}
