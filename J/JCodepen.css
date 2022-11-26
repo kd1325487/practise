@@ -1,5 +1,46 @@
 body{
     width:100vw;
     height:100vh;
-    background-color: aqua;
+    margin:0;
+}
+.box{
+    width:100%;
+    height:100%;
+    margin:0px 20px;
+    position: relative;
+}
+.header{
+    width:100%;
+    height:150px;
+    background-color: brown;
+    position: relative;
+
+}
+.logo{
+    position:absolute;
+    top:40px;
+    left:0;
+}
+.home{
+    padding:10px 20px;
+    position:absolute;
+    top:0;
+    right:100px;
+    font-weight:600;;
+    width: 150px;
+    background-color:gray;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.tabs{
+    overflow-y: hidden;
+    overflow-x: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+.tab:not(:last-of-type){
+    margin-right:10px
 }
