@@ -13,6 +13,7 @@ body{
     width:100% ;
     height:80px;
     position: relative;
+    margin-bottom:10px;
 }
 .logo{
     position: absolute;
@@ -32,11 +33,76 @@ body{
     bottom:0;
     display:flex;
     flex-direction: row;
+    justify-content: flex-start;
+}
+.tag:not(:last-of-type){
+    margin-right:10px;
+}
+
+.head{
+    
+    width:100%;
+    height:fit-content;
+    display:flex;
+    margin-bottom:10px;
+}
+.headleft{
+    border:1px solid black;
+    width:30%;
+    height:200px;
+    margin-right:10px;
+}
+.headright{
+    border: 1px solid black;
+    width:70%;
+    height:200px;
+}
+.mid{
+    border:1px solid black;
+    width:calc(100% - 80px);
+    height:320px;
+    padding: 40px;
+    display: flex;
+    margin-bottom:10px;
+}
+.vbox{
+    border:1px solid black;
+    width:300px;
+    height:250px;
+}
+.feet{
+    border:1px solid black;
+    width:calc(100% - 60px);
+    height:100px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    padding:30px;
+}
+.sbox{
+    border:1px solid black;
+    width:50px;
+    height:50px;
+}
+.feetlable{
+    width:100%;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
 }
-.tag{
-    margin:10px;
+.midlable{
+    width: calc(100% - 380px);
+    height:250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
-.head{
-    border:1px solid black;
+a{
+    text-decoration: none;
+}
+iframe{
+    width:100%;
+    height:100%;
 }
