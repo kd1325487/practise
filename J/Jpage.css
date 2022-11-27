@@ -2,16 +2,17 @@ body{
     margin:0px;
     padding:0 30px;
 }
-.top{
+/*.top{
     position:relative;
     height:150px;
     width:100%;
-}
+}*/
 .home{
     position:absolute;
     width:150px;
     height:40px;
     right:0;
+    top:0;
     display:flex;
     background-color:gray;
     flex-direction:row;
@@ -73,11 +74,11 @@ body{
 }
 .box1{
     border:1px solid black;
-    width:155px;
-    height:190px;   
+    width:calc(30% - 20px);
+    height:180px;   
     padding:5px;
-    margin-right:27px;
-    margin-bottom:20px;
+    margin-right:20px;
+    margin-bottom:10px;
 }
 .box1in{
     border:1px solid black;
@@ -86,20 +87,20 @@ body{
 }
 .box2{
     border:1px solid black;
-    width:394px;
-    height:200px;
-    margin-bottom:20px;
+    width:calc(70% - 14px);
+    height:190px;
+    margin-bottom:10px;
     
 }
 .box3{
     border:1px solid black;
-    width:165px;
+    width:calc(30% - 10px);
     height:50px;
-    margin-right:27px;
+    margin-right:20px;
 }
 .box4{
     border:1px solid black;
-    width:394px;
+    width:calc(70% - 14px);
     height:50px;
 }
 .boxfeet{
@@ -125,14 +126,23 @@ body{
     align-items: center;
 }
 .tabs{
+    position: absolute;
+
     display:flex;
-    position:absolute;
-    bottom:0;
+  
+    width:100%;
+    overflow-x: auto;
+    overflow-y:hidden;
 
 }
 .header{
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    align-items: flex-end;
     width:100%;
     height:150px;
     position:relative;
     margin-bottom:10px;
+
 }
