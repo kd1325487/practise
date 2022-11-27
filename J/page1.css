@@ -106,12 +106,14 @@ body{
     height:170px;
     border:1px solid #555;
     margin-right:3px;
+    margin-top:10px;
 }
 .mid-4{
     width:calc(70% - 10px);
     height:170px;
     border:1px solid #555;
     margin-left:8px;
+    margin-top:10px;
 }
 .down{
     display:flex;
