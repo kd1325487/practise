@@ -1,5 +1,4 @@
 body{
-<<<<<<< HEAD
     margin:0px;
     padding:0 30px;
 }
@@ -12,7 +11,7 @@ body{
     position:absolute;
     width:150px;
     height:40px;
-    right:50px;
+    right:0;
     display:flex;
     background-color:gray;
     flex-direction:row;
@@ -22,82 +21,14 @@ body{
 .logo{
     position:absolute;
     top:30px;
-    left:30px;
+    left:0;
     font-size:40px;
     font-weight:600;
     
-=======
-    width:100vw;
-    height:100vh;
-    margin:0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
-}
-.box{
-   
-    
-    width:590px;
-    height:100%;
-    margin:0px 20px;
-    position: relative;
-}
-.header{
-    width:100%;
-    height:150px;
-    
-    position: relative;
-    display: flex;
-    justify-content:flex-start;
-    align-items: flex-end;
-    margin-bottom: 10px;
-}
-.logo{
-    position:absolute;
-    top:40px;
-    left:0;
-    font-size: 40px;
-    font-weight: 600;
-}
-.home{
-    padding:10px 20px;
-    position:absolute;
-    top:0;
-    right:0;
-    font-weight:600;;
-    width: 150px;
-    background-color:gray;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-}
-.tabs{
-    overflow-y: hidden;
-    overflow-x: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-
->>>>>>> 6729aa9c26dd08ffaa8fd705108b8dd96cdb04d3
 }
 .tab:not(:last-of-type){
     margin-right:10px;
 }
-<<<<<<< HEAD
-.tabs{
-    display:flex;
-    flex-direction:row;
-    
-    overflow-x:auto;
-    overflow-y:hidden;
-}
-.center{
-    display:flex;
-    width:300px;
-    right:300px;
-    background-color:red;
-=======
 .bodybox{
     
     width:100%;
@@ -192,5 +123,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
->>>>>>> 6729aa9c26dd08ffaa8fd705108b8dd96cdb04d3
+}
+.tabs{
+    display:flex;
+    position:absolute;
+    bottom:0;
+
+}
+.header{
+    width:100%;
+    height:150px;
+    position:relative;
+    margin-bottom:10px;
 }
