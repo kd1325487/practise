@@ -11,7 +11,7 @@ body{
     position:absolute;
     width:150px;
     height:40px;
-    right:50px;
+    right:0;
     display:flex;
     background-color:gray;
     flex-direction:row;
@@ -21,7 +21,7 @@ body{
 .logo{
     position:absolute;
     top:30px;
-    left:30px;
+    left:0;
     font-size:40px;
     font-weight:600;
     
@@ -123,4 +123,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.tabs{
+    display:flex;
+    position:absolute;
+    bottom:0;
+
+}
+.header{
+    width:100%;
+    height:150px;
+    position:relative;
+    margin-bottom:10px;
 }
