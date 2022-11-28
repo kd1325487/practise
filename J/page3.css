@@ -1,0 +1,137 @@
+body{
+    margin:0;
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+.box{
+    width:590px;
+    height:100vh;
+}
+.menu{
+    position:relative;
+    width:100%;
+    height:150px;
+    border:1px solid black;
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:flex-end;
+}
+.LOGO{
+    position:absolute;
+    top:20px;
+    font-size:30px;
+    font-weight:600;
+}
+.page-name{
+    position:absolute;
+    width:100px;
+    height:30px;
+    top:0;
+    right:20px;
+    background-color:gray;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+.tab:not(:last-of-type){
+    margin:10px;
+}
+.tabs{
+    width:100%;
+    position:absolute;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+}
+.mid{
+    flex-wrap:wrap;
+    display:flex;
+    width:100%;
+    height:fit-content;
+    border:1px solid black;
+}
+.mid-1{
+    width:calc(30% - 8px);
+    height:200px;
+    border:1px solid black;
+    margin:3px;
+}
+.mid-2{
+    width:calc(70% - 8px);
+    height:200px;
+    border:1px solid black;
+    margin:3px;
+}
+.mid-3{
+    position:relative;
+    display:flex;
+    width:100%;
+    height:300px;
+    border:1px solid black;
+    margin:3px;
+    flex-wrap:wrap;
+    
+}
+.mid-3-1{
+    margin-top:10px;
+    margin-left:10px;
+}
+label{
+    left:30px;
+    display:flex;
+    margin-top:10px;
+    width:300px;
+    height:50px;
+}
+.mid-3-2{
+    position:absolute;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    width:500px;
+    height:40px;
+    background-color:gray;
+    bottom:30px;
+    left:40px;
+}
+.bottom{
+    position:relative;
+    display:flex;
+    width:100%;
+    height:250px;
+    border:1px solid black;
+}
+.box2{
+    display:flex;
+    width:100%;
+    height:241px;
+    border:1px solid black;
+    margin:3px 3px 3px 3px;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap:wrap;
+}
+.box1{
+    display:flex;
+    width:60px;
+    height:50px;
+    border:1px solid black;
+    flex-direction:row;
+}
+.label2{
+    width:98%;
+    height:50px;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
