@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    min-height:100vh;
+    overflow-x: hidden;
+}
+header{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:80px;
+    background:salmon;
+    padding:0px 40px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 5px 15px red;
+}
+.logo{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: pink;
+    font-size: 30px;
+    font-weight:600px;
+    letter-spacing:0.1em;
+    padding:20px 0 0 0;
+}
+.top{
+    display:flex;
+    align-items:center;
+}
+.top ul{ 
+    display:flex;
+    gap:30px;
+}
+.top ul li{
+    list-style:none;
+}
+.top ul li a{
+    position: relative;
+    text-decoration:none;
+    text-transform: uppercase;
+    color: pink;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+}
+.top ul li a::before{
+    position:absolute;
+    content:'';
+    bottom:-2px;
+    width:100%;
+    height:2px;
+    background:aqua;
+    transform: scaleX(0);
+    transition:transform 0.5s ease-in-out;
+    transform-origin: right; 
+}
+.top ul li a:hover::before{
+    transform: scaleX(1);
+    transform-origin: left; 
+}
+.search{
+    position:relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size:1.5em;
+    z-index: 1;
+    cursor: pointer;
+}
+.searchBox{
+    position:absolute;
+    right:-100%;
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    padding: 0 30px;
+    transition:0.5s ease-in-out;
+    background:salmon;
+}
+.searchBox.active{
+    right:0;
+}
+.searchBox input{
+    width:100%;
+    height:50px;
+    outline:none;
+    background:salmon;
+    border: none;
+    font-size:1.2em;
+    border-bottom:1px solid aqua;
+}
+.searchBtn{
+    position:relative;
+    left:15px;
+    top:2.5px;
+    transition:0.5s ease-in-out;
+}
+.searchBtn.active{
+    left:5px;
+    top:2.5px;
+    transition:0.5s ease-in-out;
+}
+.closeBtn{
+    position:relative;
+    bottom:0;
+    opacity:0;
+    visibility:hidden;
+    transition:0.5s;
+    scale:0;
+}
+.closeBtn.active{
+    opacity:1;
+    top:3px;
+    visibility:visible;
+    transition:0.5s;
+    scale:1.5;
+}
+.menu{
+    position:relative;
+    display:none;
+}
+@media (max-width:800px){
+    .searchBtn{
+        left:0;
+    }
+    .menu{
+        position:absolute;
+        display: flex;
+        font-size: 2em;
+        cursor: pointer;
+        transform: translateX(30px);
+        z-index: 10;
+    }
+    header .box{
+        position:absolute;
+        opacity:0;
+        visibility: hidden;
+        left:100%;
+
+    }
+}
