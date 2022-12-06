@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    width:100vw;
+    height:100%;
+    padding:40px;
+}
+.hicon{
+    width:45px;
+    height:45px;
+    border-radius: 50%;
+    border:1px solid black;
+    margin-right:10px;
+    
+}
+.box{
+    width: 100%;
+    height:100%;
+    display: flex;
+}
+.msgbox{
+    padding:10px;
+    display:flex;
+    align-items:center;
+    width:calc(100% - 70px);
+    height:100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.text{
+    position: relative;
+    width: 100%;
+    outline:0;
+    border:0;
+    border-bottom:1px solid gray;
+    margin-bottom: 10px;
+}
+input.text::before{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    bottom:-5px;
+    background: black;
+}
+.sicon{
+    width:25px;
+    height:25px;
+}
+.btn{
+    width:50px;
+    height:30px;
+    background: white;
+    border-radius:20px;
+}
+.msgboxs{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-wrap: wrap;
+}
