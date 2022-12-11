@@ -2,13 +2,13 @@ const add=document.getElementById('add');
 const delet=document.getElementById('delet');
 const text=document.getElementById('text');
 const msgdata=document.getElementById('msgdata');
-const c=document.getElementById('c');
+const p=document.getElementById('p');
 let data=[]
-
+let cs=0
 add.onclick=function(){
     let datahtml=''
-    let cs=0
-    let asdf='則留言'
+    
+    
     // let color=Math.floor(Math.random()*999)
     data.push({
         text:text.value
@@ -24,11 +24,11 @@ add.onclick=function(){
         </div>  
         `
     msgdata.innerHTML=datahtml
-        cs=cs+1
-        
-    c.innerHTML=cs+asdf  
-    text.value=''
+   
     })
+    cs=cs+1
+    p.innerHTML=cs+'則留言'
+    text.value=''
 }
 delet.onclick=function(){
     text.value=''
