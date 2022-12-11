@@ -17,7 +17,7 @@ add.onclick=function(){
         <div class="box">
             <div class="box2">
             <input type="image" alt="" class="img">
-            <p>${item.text}</p>
+            <p class="box3">${item.text}</p>
             </div>
         </div>
         `
